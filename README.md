@@ -31,20 +31,6 @@ This project implements an **automated weather data ETL pipeline** using **Apach
 
  
 
-## 📦 Folder Structure
-
-docker-airflow-master/  
-├── dags/   
-│ └── airflow_weather_dag.py    
-├── weather/       
-│ └── raw_london_20240627.json    
-├── data/      
-│ └── weather_london_20240627.csv   
-├── archive/      
-│ └── weather_london_20240625.csv      
-├── docker-compose.yml # Docker config for Airflow
-
-
  
 ---
 
