@@ -12,7 +12,7 @@ import os
 import pandas as pd
 
 # === Configuration ===
-API_KEY = '6d498e4b60d84d3ebed160047241010'
+API_KEY =  ''# Use API Key Here
 CITIES = ['Delhi', 'Mumbai', 'Kottayam']
 RAW_FOLDER = '/usr/local/airflow/data/weather/raw'
 ARCHIVE_FOLDER = '/usr/local/airflow/data/weather/archive'
