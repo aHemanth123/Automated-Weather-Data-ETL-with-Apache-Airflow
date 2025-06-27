@@ -1,0 +1,4 @@
+city,temperature_C,humidity,condition,datetime
+Delhi,17.6,84,Partly Cloudy,2025-06-26 21:49
+Mumbai,28.4,84,Mist,2025-06-27 07:39
+Kottayam,24.7,90,Patchy rain nearby,2025-06-27 07:39
