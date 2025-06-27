@@ -2,16 +2,14 @@
 
 This project implements an **automated weather data ETL pipeline** using **Apache Airflow (v1.10.9)** and **WeatherAPI**. The DAG fetches daily weather data for selected cities, saves it in JSON/CSV format, and archives old data locally — all without requiring a database.
 
----
-
+ 
 ## 🎯 Project Objective
 
 - Automate daily weather data collection using Airflow
 - Use WeatherAPI to fetch weather information
 - Save the data as `.json` and/or `.csv` locally
 - Archive older files into a separate folder for historical tracking
-
----
+ 
 
 ## 🛠️ Tech Stack
 
@@ -24,7 +22,7 @@ This project implements an **automated weather data ETL pipeline** using **Apach
 | Docker     | To run Airflow environment             |
 | pandas     | To transform and save data in tabular form |
 
----
+ 
 
 ## 📦 Folder Structure
 
@@ -40,7 +38,7 @@ docker-airflow-master/
 ├── docker-compose.yml # Docker config for Airflow
 
 
----
+ 
 
 ## 🔁 ETL Pipeline Workflow
 
@@ -51,8 +49,7 @@ docker-airflow-master/
 ### 2. `archive_old_files` (BashOperator)
 - Moves existing data files into `/usr/local/airflow/archive/` using `mv` command
 - Helps organize historical data cleanly
-
----
+ 
 
 ## 📂 DAG Schedule & Structure
 
@@ -64,8 +61,7 @@ docker-airflow-master/
   - `fetch_weather_data`
 
 DAG is triggered manually or scheduled to run once per day, fetching weather data and managing file storage.
-
----
+ 
 
 ## 🔐 API Key Setup
 
